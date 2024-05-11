@@ -1,3 +1,7 @@
+Introduccion
+
+Nuestro equipo lleva por nombre Kinisi y esta conformado por: Jesus Manucci, Maria Garbriela Maldonado, y Carmelo Farrauto teniendo como obejetivo comun participar y sacar el maximo provecho en cuanto al aprendizaje y conocimiento en la WRO en la categoria futuros ingenieros, a continuacion en este repositorio encontrara todo aceca de nuestro vehiculo kinisi: codigos de programacion, fotos y video del carro, componentes y materiales usados, su diseño y otros detalles mas acerca de kinisi
+
 Engineering materials
 ====
 
