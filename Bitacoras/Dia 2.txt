@@ -1,0 +1,12 @@
+Luego de de discutir el boceto del sistema de dirección ,el día de hoy se inició a hacer una maqueta de cómo sería su funcionamiento hecho de acrílico y palillos de altura, así también realizamos el chasis del auto en acrílico.
+Se creó la lista de componentes que considerábamos necesarios utilizar y se realizó el pedido de los mismos, componentes tales cómo:
+* Sensor de colores: para saber en qué lugar estacionarse y evitar obstáculos.
+
+ *Motorreductor con rueda: Para la traccion del vehiculo.
+
+ *Servomotor: Dirección del auto.
+
+ *Sensor ultrasónico: Para detectar obstáculos.
+ *Arduino UNO: para programar el carro.
+ *Motor shield: Para conectar los motores.
+ *Bateria.
