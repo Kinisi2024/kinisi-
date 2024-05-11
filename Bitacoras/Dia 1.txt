@@ -1,0 +1,5 @@
+   Hace una semana como equipo empezamos a reunirnos para discutir como sería nuestro proyecto, donde nuestro compañero Carmelo se le ocurrió un posible nombre, nos comento sobre la palabra en griego kinisi que quiere decir movimiento.
+
+
+   Se presentó y discutió un boceto en papel del modelo de dirección, al revisarlo se propuso realizar una maqueta en cartón para así evaluar todos los factores que pudieran mejorar o afectar nuestro proyecto.
+ Al revisar de nuevo llegamos a la conclusión de que evaluariamos la posibilidad de engranajes para convertir el movimiento circular en uno lineal, se investigo también que sería lo más factible para analizar en que punto del auto deberia ir cada componente para mejorar su velocidad o funcionalidad.
