@@ -1,0 +1,2 @@
+Al tener la primera maqueta del sistema de dirección decidimos probarla con unas ruedas de juguete, no fue fácil llegar a este punto pero lo logramos.
+Al probar el sistema conseguimos un problema y fue que el sistema de dirección arrastraba a las ruedas y el cruce no era tan eficiente como se tenía previsto.
