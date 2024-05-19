@@ -1,0 +1,3 @@
+Hoy se realizó el armado del chasis con los componentes luego de tantos intentos conseguimos una posible solución para el sistema dirección aunque nos ha presentado problemas
+en la alineación de nuestras ruedas obteniendo cómo resultado que el auto no ande recto y se incline hacia un lado, ahora estamos en el proceso de encontrar la mejor manera
+de alinear ambas ruedas. Ademas ya tenemos en nuestras manos los componestes a necesitar para el vehiculo
