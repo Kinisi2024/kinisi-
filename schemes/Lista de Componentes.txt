@@ -1,0 +1,8 @@
+Los componentes que lleva nuestro vehiculo son los siguientes:
+Sensor de colores
+Motorreductor
+Servomotor
+Sensor ultrasonico
+Arduino UNO
+Motor Shield
+bateria
