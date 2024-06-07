@@ -36,7 +36,31 @@ void setup() {
   digitalWrite(Trigger, LOW);//Inicializamos el pin con 0
 }
 void loop() {
-  
+     //Modo Autónomo
+        radar_centro();
+        cm_distancia=distancia();
+        if(cm_distancia>DistanciaSegura){
+          adelante();
+        }
+    else{
+          radar_derecha();
+          cm_distancia = distancia();
+  if(cm_distancia>DistanciaSegura){
+            adelante();
+            radar_centro();
+            adelante();
+          }else{
+          radar_izquierda();
+          cm_distancia = distancia ();
+     if (cm_distancia>distanciaSegura){
+                adelante();
+                radar_centro ();
+                adelante();
+            }else{
+    atras();
+            }
+        }
+        }
 }
 
 long distancia(){
