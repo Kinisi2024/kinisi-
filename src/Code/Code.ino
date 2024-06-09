@@ -10,11 +10,12 @@ Servo servo1;
 const int Trigger = A2;         //Pin digital 2 para el Trigger del sensor
 const int Echo = A3;            //Pin digital 3 para el Echo del sensor
 long DistanciaSegura = 70;//Distancia Segura medida en cm
-int Desplazamiento=500;
+int Desplazamiento=900;
 long cm_distancia=0;
 
 //Prototipos de las funciones
 long distancia();
+void stop();
 void adelante();
 void atras();
 void radar_centro();
@@ -43,19 +44,20 @@ void loop() {
           adelante();
         }
     else{
+      stop();
           radar_derecha();
           cm_distancia = distancia();
   if(cm_distancia>DistanciaSegura){
             adelante();
+            delay (1000);
             radar_centro();
-            adelante();
           }else{
           radar_izquierda();
           cm_distancia = distancia ();
-     if (cm_distancia>distanciaSegura){
+     if (cm_distancia>DistanciaSegura){
                 adelante();
+                delay(1000);
                 radar_centro ();
-                adelante();
             }else{
     atras();
             }
@@ -76,14 +78,11 @@ long distancia(){
 
 void adelante(){
 //Adelante
-motor.setSpeed(220);
-motord.setSpeed(220);
+motor.setSpeed(180);
+motord.setSpeed(180);
 motor.run(FORWARD);
 motord.run(FORWARD);
-delay(Desplazamiento);
-motor.run(RELEASE);
-motord.run(RELEASE);
-delay(300);
+
 }
 
 void atras(){
@@ -96,6 +95,12 @@ delay(Desplazamiento);
 motor.run(RELEASE);
 motord.run(RELEASE);
 delay(300);
+}
+
+void stop(){
+  //detener
+  motor.run (RELEASE);
+  motord.run (RELEASE);
 }
 
 void radar_centro(){
@@ -112,6 +117,6 @@ delay(300);
 
 void radar_izquierda(){
 //Izquierda
-servo1.write(130);
+servo1.write(120);
 delay(300);
 }
