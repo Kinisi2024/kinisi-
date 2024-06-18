@@ -12,6 +12,14 @@ const int Echo = A3;            //Pin digital 3 para el Echo del sensor
 long DistanciaSegura = 70;//Distancia Segura medida en cm
 int Desplazamiento=900;
 long cm_distancia=0;
+const int s0 = A0;  
+const int s1 = A1;  
+const int s2 = A4;  
+const int s3 = A5;  
+const int out = 2;    
+int rojo = 0;  
+int verde = 0;  
+int azul = 0;
 
 //Prototipos de las funciones
 long distancia();
@@ -35,8 +43,44 @@ void setup() {
   pinMode(Trigger, OUTPUT); //pin como salida
   pinMode(Echo, INPUT);  //pin como entrada
   digitalWrite(Trigger, LOW);//Inicializamos el pin con 0
+  //iniciar el Sensor de Colores
+  pinMode(s0, OUTPUT);
+  pinMode(s1, OUTPUT);
+  pinMode(s2, OUTPUT);
+  pinMode(s3, OUTPUT);
+  pinMode(out, INPUT);
+  digitalWrite (s0, HIGH);
+  digitalWrite(s1, LOW);
 }
 void loop() {
+  digitalWrite(s2, LOW);
+  digitalWrite (s3, LOW);
+  rojo = pulseIn (out, LOW);
+  delay (200);
+  digitalWrite(s2, HIGH);
+  digitalWrite (s3, HIGH);
+  verde = pulseIn (out, LOW);
+  delay(200);
+  digitalWrite(s2, LOW);
+  digitalWrite (s3, HIGH);
+  azul = pulseIn (out, LOW);
+  delay(200);
+
+  Serial.print("R:");
+  Serial.print(rojo);
+  Serial.print("\t");
+   Serial.print("V:");
+  Serial.print(verde);
+  Serial.print("\t");
+   Serial.print("A:");
+  Serial.print(azul);
+  Serial.print("\t");
+  if (rojo < 40 && verde > 50 && azul < 40) {
+    Serial.println ("ROJO");}
+  if (rojo > 55 && verde < 60 && azul < 35){
+    Serial.println ("AZUL");}
+  if (rojo < 65 && verde < 50 && azul > 40){
+    Serial.println ("VERDE");}
      //Modo Autónomo
         radar_centro();
         cm_distancia=distancia();
@@ -105,18 +149,18 @@ void stop(){
 
 void radar_centro(){
 //Centro
-servo1.write(90);
+servo1.write(86);
 delay(300);        
 }
 
 void radar_derecha(){
 //Derecha
-servo1.write(60);
+servo1.write(56);
 delay(300);
 }
 
 void radar_izquierda(){
 //Izquierda
-servo1.write(120);
+servo1.write(116);
 delay(300);
 }
