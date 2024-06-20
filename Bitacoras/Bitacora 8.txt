@@ -1,0 +1,4 @@
+Durante esta semana tuvimos problemas con la calibracion del sensor de colores pero luego de varios dias logramos que el sensor reconozca el color rojo y verde para los
+obstaculos a una distancia considerable, posteriormente incluimos el codigo de colores al codigo fuente del carro para cumplir con el objetivo de la ronda de
+obstaculos, ademas nos dimos cuenta que al vehiculo le hacia falta mas peso en la parte delantera ya que en la parte de atras se encuentra el arduino, el motor shield y la
+bateria
