@@ -23,7 +23,7 @@ int azul = 0;
 
 //Prototipos de las funciones
 long distancia();
-void stop();
+void detener();
 void adelante();
 void atras();
 void radar_centro();
@@ -88,7 +88,7 @@ void loop() {
           adelante();
         }
     else{
-      stop();
+      detener();
           radar_derecha();
           cm_distancia = distancia();
   if(cm_distancia>DistanciaSegura){
@@ -141,7 +141,7 @@ motord.run(RELEASE);
 delay(300);
 }
 
-void stop(){
+void detener(){
   //detener
   motor.run (RELEASE);
   motord.run (RELEASE);
