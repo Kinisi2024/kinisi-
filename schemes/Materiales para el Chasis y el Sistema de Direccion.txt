@@ -1,0 +1,10 @@
+Materiales para el Chasis:
+Cartón y Fibra de Vidrio 
+Este chasis se creó en forma de capas (3 capas unidas con pega loka, 2 de carton y una de fibra de vidrio) de manera que así pueda lograr una superficie más resistente, donde
+la fibra de vidrio se encuentra en el centro para soportar de mejor manera el peso y darle rigidez y el cartón tanto en la parte superior como inferior para amortiguar
+cualquier golpe que pueda haber.
+
+Materiales para el Sistema de Direccion:
+Acrilico y Palillos de altura
+El acrilico fue usado como material principal ya que es un material facil de manejar, liviano y lo suficientemente resistente para su funcion. Por otro lado los palillos de 
+altura fue el material mas sensillo que cumplia con ayudar al movimiento de la direccion.
