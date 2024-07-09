@@ -1,4 +1,4 @@
    During this week, we encountered issues with calibrating the color sensor. However, after several days of troubleshooting, we successfully
 configured the sensor to recognize red and green colors for obstacles at a considerable distance. Subsequently, we integrated the color
 recognition code into the vehicle’s source code to meet the objectives of the obstacle course challenge. Additionally, we realized that the
-vehicle needed additional weight at the front, as the Arduino, motor shield, and battery are currently located at the back.
+vehicle needed additional weight at the front, as the Arduino, motor shield, and battery are currently located at the back. 
