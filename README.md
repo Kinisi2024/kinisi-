@@ -1,6 +1,6 @@
-Introduccion
+Introduction
 
-Nuestro equipo lleva por nombre Kinisi y esta conformado por: Jesus Manucci, Maria Garbriela Maldonado, y Carmelo Farrauto teniendo como obejetivo comun participar y sacar el maximo provecho en cuanto al aprendizaje y conocimiento en la WRO en la categoria futuros ingenieros, a continuacion en este repositorio encontrara todo acerca de nuestro vehiculo kinisi: codigos de programacion, fotos y video del carro, componentes y materiales usados, su diseño y otros detalles mas acerca de kinisi
+Our team, named Kinisi, comprises Jesus Manucci, Maria Gabriela Maldonado, and Carmelo Farrauto. Our shared objective is to participate in and maximize learning and knowledge acquisition at the WRO in the Future Engineers category. Within this repository, you will find comprehensive information about our Kinisi vehicle: programming codes, photos and videos of the car, components and materials used, its design, and other details about Kinisi.
 
 Engineering materials
 ====
