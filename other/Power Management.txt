@@ -1,0 +1,2 @@
+Our autonomoos car uses a rechargable 9v battery as the sole essential source of energy for the operation of our vehicle. The battery has a
+duration of approximately one hour non stop and being rechargable allows us to use it as many times as necessary.

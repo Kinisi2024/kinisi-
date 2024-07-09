@@ -1,0 +1,40 @@
+A gear motor, due to its inherent ability to reduce rotational speed while simultaneously increasing torque, was deemed the optimal choice for
+precisely controlling the speed and force required by Kinisi's [autonomous vehicle] system.
+
+Torque:
+Kinisi's autonomous vehicle utilizes two high-torque gear motors for robust locomotion. Each motor boasts the following performance
+characteristics:
+
+Operating Voltage: 3V - 12V (recommended 6V - 9V)
+
+Current Draw:
+
+* No Load: 100 mA
+* Full Load: 200 mA
+
+Maximum Torque: 1 kg/cm
+
+Speed (Under Load):
+
+* 3V: 90 RPM
+* 6V: 190 RPM
+* 9V: 230 RPM
+
+Gearbox: 1:48 plastic gear ratio
+
+Currently, the motors are operating at their maximum recommended voltage of 9V, achieving a top speed of 230 RPM. 
+
+Important Note: It's critical to remember that Kinisi's drive system utilizes two motors coupled through a shared axle. This effectively doubles
+the overall torque output, enhancing the vehicle's ability to traverse varied terrain and manage heavier payloads.
+
+Impact on Kinisi's Performance:
+
+The combination of high torque and controlled speed offered by these gear motors directly contributes to Kinisi's remarkable performance as an
+autonomous vehicle:
+
+* Strong Tractive Force: The high torque allows Kinisi to tackle inclines, uneven surfaces, and obstacles with ease.
+* Precise Control: The gear motor's ability to precisely control speed and force enables smooth and responsive navigation, even in tight spaces.
+* Energy Efficiency: Operating at the recommended voltage ensures optimal power utilization, maximizing runtime and minimizing energy consumption.
+
+This detailed analysis highlights the key role of the gear motors in Kinisi's robust and efficient operation, showcasing the intelligent design
+that drives this autonomous vehicle.

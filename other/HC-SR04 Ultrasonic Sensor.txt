@@ -1,0 +1,12 @@
+Our autonomous vehicle incorporates an array of three HC-SR04 ultrasonic sensors. These sensors provide highly accurate distance measurements
+through pulse-based echolocation, serving as the cornerstone of the vehicle's obstacle avoidance and navigation system.
+
+This sensor array plays a crucial role in enabling the vehicle to:
+
+* Obstacle Avoidance: By continuously scanning the surrounding environment, the sensors detect obstacles within the vehicle's path. This data is
+processed within the Arduino code to activate appropriate avoidance maneuvers, preventing collisions with walls and other obstacles on the track.
+* Strategic Navigation: The sensor readings are also used to guide the vehicle's decision-making process for navigating specific turns and
+intersections. The distances to walls and track boundaries are analyzed, facilitating intelligent decisions regarding the direction of turns.
+
+This integration of a multi-sensor system, coupled with the robust processing capabilities of the Arduino platform, empowers the vehicle with
+the ability to navigate its environment autonomously while ensuring safe and efficient movement.

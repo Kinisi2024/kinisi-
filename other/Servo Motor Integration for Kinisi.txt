@@ -1,0 +1,7 @@
+Our autonomous vehicle incorporates a servo motor, a rotary actuator capable of precise angular movements, to enhance the steering system's 
+performance. This integration seamlessly combines mechanical actuation with our vehicle's autonomous control, enabling accurate and responsive
+turning maneuvers.
+
+The servo motor, controlled by the Arduino platform, is programmed to operate within a specific range of 25° to 35°. This finely tuned range
+ensures that the vehicle's steering system provides the necessary precision for navigating tight turns and executing controlled maneuvers,
+critical for successful autonomous operation.

@@ -1,0 +1,4 @@
+   Our vehicle utilizes a PWM (Pulse Width Modulation) range of 160 to 190 for speed control. This range was determined through experimentation, 
+as the Arduino platform supports a PWM resolution of 0 to 255, which effectively controls the pulse width and hence, the power delivered to the
+motor. Employing these values within this specific range has proven to be highly effective in achieving optimal performance and control of
+Kinisi across multiple testing rounds.
