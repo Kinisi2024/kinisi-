@@ -1,3 +1,3 @@
 After having the first prototype of the steering system, we decided to test it with toy wheels. It was not easy to reach this point, but we
 managed to do it. When testing the system, we encountered an issue where the steering system dragged the wheels and the turning was not as
-efficient as anticipated.
+efficient as anticipated. 

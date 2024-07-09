@@ -3,4 +3,4 @@
 
 We presented and discussed a paper sketch of the steering model, and it was proposed to create a cardboard model to assess all factors that
 could enhance or impact our project. Upon review, we concluded that we would explore the possibility of using gears to convert circular motion
-into linear motion. We also researched the most feasible placement for each component in the car to enhance its speed and functionality.
+into linear motion. We also researched the most feasible placement for each component in the car to enhance its speed and functionality. 

@@ -7,4 +7,4 @@ Additionally, we fabricated the car chassis from acrylic. We compiled a list of 
 - Ultrasonic sensor: to detect obstacles.
 - Arduino UNO: for programming the car.
 - Motor shield: to connect the motors.
-- Battery.
+- Battery. 

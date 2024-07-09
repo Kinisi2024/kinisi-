@@ -1,4 +1,4 @@
 Today, we successfully managed to make our car capable of moving in a nearly straight line, thus solving our last problem. Over the course of 
 the days, we realized that the issue was not with the steering system but rather that the two traction motors were running at slightly different
 speeds. We had to devise and create a rear axle, which was a significant advancement. However, we noticed that while the wheels on the vehicle
-turn, the car itself does not follow the trajectory of the front wheels, so we have not yet achieved turning capability.
+turn, the car itself does not follow the trajectory of the front wheels, so we have not yet achieved turning capability. 

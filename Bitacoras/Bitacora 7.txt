@@ -1,3 +1,3 @@
 Today, we began working with the code by installing and downloading the necessary libraries. We defined both the variables and functions that we
 will use and then started with the void loop in which we instructed the vehicle to move forward. If an object obstructed its path, the vehicle
-was programmed to turn right or left, depending on which path was clear of obstacles.
+was programmed to turn right or left, depending on which path was clear of obstacles. 
