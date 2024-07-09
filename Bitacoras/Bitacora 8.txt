@@ -1,4 +1,4 @@
-Durante esta semana tuvimos problemas con la calibracion del sensor de colores pero luego de varios dias logramos que el sensor reconozca el color rojo y verde para los
-obstaculos a una distancia considerable, posteriormente incluimos el codigo de colores al codigo fuente del carro para cumplir con el objetivo de la ronda de
-obstaculos, ademas nos dimos cuenta que al vehiculo le hacia falta mas peso en la parte delantera ya que en la parte de atras se encuentra el arduino, el motor shield y la
-bateria
+   During this week, we encountered issues with calibrating the color sensor. However, after several days of troubleshooting, we successfully
+configured the sensor to recognize red and green colors for obstacles at a considerable distance. Subsequently, we integrated the color
+recognition code into the vehicle’s source code to meet the objectives of the obstacle course challenge. Additionally, we realized that the
+vehicle needed additional weight at the front, as the Arduino, motor shield, and battery are currently located at the back.

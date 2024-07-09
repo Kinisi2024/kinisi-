@@ -1,3 +1,4 @@
-Durante varios días nos reunimos a buscar posibles soluciones ya que el carro no giraba como se esperaba, realizamos el sistema de dirección una vez más ya que el anterior
-no cumplía con la acción del giro y era muy débil. Al montar el sistema de dirección dejo de presentar el problema ya que las ruedas delanteras ya estaban a la misma altura
-y ambas cruzaban por igual y en ningún momento volvió a presentar el problema de que alguna de las ruedas no girara.
+During this week, we encountered challenges with the color sensor calibration. However, after several days of troubleshooting, we successfully
+configured the sensor to recognize the colors red and green for obstacles at a considerable distance. Subsequently, we integrated the color
+codes into the vehicle's source code to meet the objectives of the obstacle course challenge. Furthermore, we identified the need to add more 
+weight to the front part of the vehicle, as the Arduino, motor shield, and battery are currently located at the back.

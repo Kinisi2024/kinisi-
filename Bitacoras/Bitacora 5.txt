@@ -1,4 +1,4 @@
-el dia de hoy logramos que nuestro carro sea capas de andar en linea casi recta solucionando asi nuestro ultimo problema, en el transcurso de los dias nos dimos cuenta
-que realmente el problema no era el sistema de direccion si no que los dos motores de la traccion uno iba un poco mas rapido que otro asi que tuvimos que idear y crear
-un eje trasero siendo un buen avance, sin embargo nos dimos cuenta que en el vehiculo las ruedas cruzan pero como tal el carro no sigue la trayectoria de las ruedas 
-delanteras por lo tanto aun no conseguimos que nuestro carro gire
+Today, we successfully managed to make our car capable of moving in a nearly straight line, thus solving our last problem. Over the course of 
+the days, we realized that the issue was not with the steering system but rather that the two traction motors were running at slightly different
+speeds. We had to devise and create a rear axle, which was a significant advancement. However, we noticed that while the wheels on the vehicle
+turn, the car itself does not follow the trajectory of the front wheels, so we have not yet achieved turning capability.

@@ -1,8 +1,8 @@
-Los componentes que lleva nuestro vehiculo son los siguientes:
-Sensor de colores
-Motorreductor
-Servomotor
-Sensor ultrasonico
+The components included in our vehicle are as follows:
+Color sensor
+Gear motor
+Servo motor
+Ultrasonic sensor
 Arduino UNO
 Motor Shield
-bateria
+Battery

@@ -47,7 +47,7 @@ void loop(){
   //azul = map(frecuencia, 3, 26, 255, 0);
   Serial.print("A:");
   Serial.print(azul10);
-  Serial.print(" ");
+  Serial.println(" ");
   delay (300);
   if ((rojo10 == 36 && verde10 == 36 && azul10 == 26)||(rojo10 == 35 && verde10 == 36 && azul10 == 25)||(rojo10 == 35 && verde10 == 35 && azul10 == 25)||(rojo10 == 36 && verde10 == 36 && azul10 == 25)){
   Serial.println("NEGRO");

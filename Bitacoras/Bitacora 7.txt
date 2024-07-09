@@ -1,3 +1,3 @@
-Hoy empezamos a trabajar con los códigos   colocando y descargando las librerías correspondientes, definimos tanto las variables como las funciones que vamos a usar para
-luego empezar con el void loop en el cual le dimos instrucciones al carro para que se desplace hacia adelante y si algún objeto se atraviesa cruze hacia la derecha o
-izquierda dependiendo que camino esté libre de obstáculos.
+Today, we began working with the code by installing and downloading the necessary libraries. We defined both the variables and functions that we
+will use and then started with the void loop in which we instructed the vehicle to move forward. If an object obstructed its path, the vehicle
+was programmed to turn right or left, depending on which path was clear of obstacles.

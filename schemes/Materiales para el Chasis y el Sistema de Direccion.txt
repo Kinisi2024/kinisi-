@@ -1,10 +1,10 @@
-Materiales para el Chasis:
-Cartón y Fibra de Vidrio 
-Este chasis se creó en forma de capas (3 capas unidas con pega loka, 2 de carton y una de fibra de vidrio) de manera que así pueda lograr una superficie más resistente, donde
-la fibra de vidrio se encuentra en el centro para soportar de mejor manera el peso y darle rigidez y el cartón tanto en la parte superior como inferior para amortiguar
-cualquier golpe que pueda haber.
+Materials for the Chassis:
+Cardboard and Fiberglass
+This chassis was created in layers (3 layers glued together with glue, 2 of cardboard and one of fiberglass) so that it can achieve a more
+resistant surface, where the fiberglass is located in the center to better support the weight and provide rigidity, and the cardboard on both
+the top and bottom to cushion any impact that may occur.
 
-Materiales para el Sistema de Direccion:
-Acrilico y Palillos de altura
-El acrilico fue usado como material principal ya que es un material facil de manejar, liviano y lo suficientemente resistente para su funcion. Por otro lado los palillos de 
-altura fue el material mas sensillo que cumplia con ayudar al movimiento de la direccion.
+Materials for the Steering System:
+Acrylic, Height Sticks and two alternator bearings.
+Acrylic was used as the main material because it is easy to handle, lightweight, and sufficiently resistant for its function. On the other hand,
+the height sticks were the simplest material that helped with the steering movement.
