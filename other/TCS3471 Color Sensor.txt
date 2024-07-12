@@ -1,0 +1,19 @@
+Kinisi's Color-Sensing Navigation: TCS3471 RGB Sensor Integration
+
+Kinisi, our autonomous vehicle, is poised for a significant upgrade with the implementation of the TCS3471 RGB color sensor. This sensor empowers Kinisi with advanced navigational capabilities, allowing it to respond intelligently to color cues in its environment. 
+
+How the TCS3471 Works:
+
+The TCS3471 is a highly sensitive color sensor capable of detecting and measuring red, green, and blue (RGB) light intensities. This data, along with clear ambient light readings, provides a detailed color profile for Kinisi's perception of its surroundings.
+
+Integrating the Sensor with Arduino and ESP:
+
+The TCS3471 seamlessly integrates with Arduino and ESP32 microcontrollers via the I2C protocol. This enables us to read the color sensor data using a simple library and write code to interpret it for Kinisi's navigation.
+
+Kinisi's Color-Coded Navigation:
+
+With the TCS3471 in place, Kinisi's navigation takes on a new dimension:
+
+• Green: Turn Left: When the sensor detects a dominant green color, Kinisi will execute a left turn, navigating around an obstacle or following a pre-defined route. 
+• Red: Turn Right: Similarly, a red color detection triggers a right turn, guiding Kinisi away from potential hazards or following a specific path.
+• Magenta: Parallel Parking: A magenta color signal, likely placed on the ground or a nearby object, instructs Kinisi to initiate a parallel parking maneuver. This capability showcases Kinisi's sophisticated level of autonomous control.
