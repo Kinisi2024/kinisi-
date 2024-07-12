@@ -1,68 +1,80 @@
-const int s0 = A0;  
-const int s1 = A1;  
-const int s2 = A4;  
-const int s3 = A5;  
-const int out = 2;  
-int frecuencia;  
-int rojo10;
-int verde10;
-int azul10;
-long cm_distancia=0;
+#include <Wire.h>
+#include "Adafruit_TCS34725.h"
 
-void setup(){  
-  Serial.begin(9600);
-  pinMode(s0,OUTPUT);  
-  pinMode(s1,OUTPUT);  
-  pinMode(s2,OUTPUT);  
-  pinMode(s3,OUTPUT);  
-  pinMode(out,INPUT);  
-  digitalWrite(s0, HIGH);  
-  digitalWrite(s1, LOW);  
-}  
+// Arreglo para representar la funcion gamma
+int gammatable[256];
 
-void loop(){  
+// Inicializar un objeto tcs con tiempo de integracion de 600 ms y ganancia de 16x
+Adafruit_TCS34725 tcs = Adafruit_TCS34725(TCS34725_INTEGRATIONTIME_600MS, TCS34725_GAIN_16X);
+
+// Definir estructura para almacenar valores de calibracion blanco y negro
+struct colorCalibration {
+  unsigned int blackValue;
+  unsigned int whiteValue;
+};
+
+colorCalibration redCal, greenCal, blueCal;
+
+
+void setup() {
+  // Iniciar TCS3472 I2C
+  if (tcs.begin()) {
+   //Encontrado
+  } 
+  else {
+    //No encontrado
+    while (1); // Detener
+  }
+
+  redCal.blackValue = 4703;
+  redCal.whiteValue = 49027;
+  greenCal.blackValue = 4373;
+  greenCal.whiteValue = 65535;
+  blueCal.blackValue = 4028;
+  blueCal.whiteValue = 65535;
+
+
+  // Gamma function is Out = In^2.5
+  // Required to correct for human vision
+  // Store values in an array
+  // normalized for 0 to 255
+  for (int i=0; i<256; i++) {
+    float x = i;
+    x /= 255;
+    x = pow(x, 2.5);
+    x *= 255;
+
+    gammatable[i] = int(x);
+    }  
+}
+
+
+void loop() {
+  unsigned int r, g, b, c; 
+  // Variables 0 - 255
+  int redValue;
+  int greenValue;
+  int blueValue;
+  int clearValue;
+    tcs.getRawData(&r, &g, &b, &c);
  
-  digitalWrite(s2, LOW);
-  digitalWrite (s3, LOW);
-  frecuencia = pulseIn (out, LOW);
-  rojo10 = frecuencia / 10;
-  //rojo = map (frecuencia, 3, 37, 255, 0);
-  Serial.print("R:");
-  Serial.print(rojo10);
-  Serial.print(" ");
-  delay (300);
-  digitalWrite (s2, HIGH);
-  digitalWrite (s3, HIGH);
-  frecuencia = pulseIn (out, LOW);
-  verde10 = frecuencia / 10;
-  //verde = map(frecuencia, 4, 36, 255, 0);
-  Serial.print("V:");
-  Serial.print(verde10);
-  Serial.print(" ");
-  delay (300);
-  digitalWrite (s2, LOW);
-  digitalWrite (s3, HIGH);
-  frecuencia = pulseIn (out, LOW);
-  azul10 = frecuencia / 10;
-  //azul = map(frecuencia, 3, 26, 255, 0);
-  Serial.print("A:");
-  Serial.print(azul10);
-  Serial.println(" ");
-  delay (300);
-  if ((rojo10 == 36 && verde10 == 36 && azul10 == 26)||(rojo10 == 35 && verde10 == 36 && azul10 == 25)||(rojo10 == 35 && verde10 == 35 && azul10 == 25)||(rojo10 == 36 && verde10 == 36 && azul10 == 25)){
-  Serial.println("NEGRO");
-  }else{
-   if((rojo10>= 32 && rojo10<=34)&&(verde10>= 34 && verde10<=36) && (azul10 >= 24&&azul10<=26)){
-    Serial.println("ROJO");
-   }else{
-    if((rojo10>= 29 && rojo10<=32)&&(verde10>= 33 && verde10<=36) && (azul10 >= 23&&azul10<=26)){
-     Serial.println("MAGENTA");
-    }
-   }
-   if((rojo10>= 34 && rojo10<=36)&&(verde10>= 33 && verde10<=36) && (azul10 >= 24&&azul10<=26)){
-    Serial.println("VERDE");
-   }
+    redValue = RGBmap(r, redCal.blackValue, redCal.whiteValue, 0, 255);
+    greenValue = RGBmap(g, greenCal.blackValue, greenCal.whiteValue, 0, 255);
+    blueValue = RGBmap(b, blueCal.blackValue, blueCal.whiteValue, 0, 255);
 
   }
- 
+  
+}
+
+
+int RGBmap(unsigned int x, unsigned int inlow, unsigned int inhigh, int outlow, int outhigh){
+  float flx = float(x);
+  float fla = float(outlow);
+  float flb = float(outhigh);
+  float flc = float(inlow);
+  float fld = float(inhigh);
+
+  float res = ((flx-flc)/(fld-flc))*(flb-fla) + fla;
+
+  return int(res);
 }
